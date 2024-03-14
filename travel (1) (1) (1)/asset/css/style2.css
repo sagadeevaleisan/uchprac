@@ -1,0 +1,1060 @@
+/*подключение шрифта*/
+@import url(https://fonts.googleapis.com/css?family=Jura:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500;600;700&display=swap');
+:root {
+	--font-family: "Poppins", sans-serif;
+	--second-family: "Jost", sans-serif;
+	--third-family: "Raleway", sans-serif;
+	--font3: "Josefin Sans", sans-serif;
+	--font4: "Pridi", sans-serif;
+  }
+@font-face {
+font-family: 'Montserrat Alternates';
+	src: url('../fonts/MontserratAlternates-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Montserrat Alternates';
+	src: url('../fonts/MontserratAlternates-Bold.ttf');
+	font-weight: 700;
+	font-style: normal;
+}
+/*общие стили*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat Alternates';
+}
+p {
+	padding: 15px 0;
+	margin-bottom: 0px;
+	color: rgb(0, 0, 0);
+	font-family: '';
+}
+a {
+	color: rgb(0, 0, 0);
+	cursor:pointer;
+	text-decoration: none;
+	font-family: ' Montserrat Alternates';
+}
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	object-fit: cover;
+}
+/*валидация*/
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+
+  /*кнопки*/
+  button{
+    background-color: #fff;
+    color: #000000;
+    font-size: 20px;
+    padding: 1% 8%;
+  }
+div.head, .reg {
+	padding: 20px 0;
+	font-size: 20pt;
+	color: #fff;
+}
+div.wrap {
+	padding: 20px;
+	margin: 0 auto;
+}
+div.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+div.rowt.at {
+	align-items: flex-start;
+	justify-content: space-between;
+}
+div.col div.rowt p a{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 18px;
+	color: #000;
+}
+.rowt{
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	margin-left: 25px;
+	width: 100%;
+}
+.rowt h4{
+	font-family: var(--second-family);
+font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+div.col {
+    width: 28%;
+    padding: 2px;
+    transition: .2s;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 20px;
+	display: flex;
+	
+	flex-direction: column;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+background: rgba(2, 48, 192, 0.07);
+border-radius: 25px;
+box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.1);
+background: #fff;
+height: 390px;
+}
+
+	div.col img {
+		width: 90%;
+		height: 250px;
+		/* margin: 15px 15px 15px 22px; */
+		height: auto;
+		border-radius: 40px;
+		margin-top: 20px;
+	}
+
+/*шапка*/
+header {
+	background-color:none;
+}
+
+header div.top a:hover {
+	text-decoration: none;
+}
+.menus{
+	display: flex;
+	justify-content:space-between;
+}
+.logo{
+	width: 25%;
+}
+.logo a {
+	width: 30%;
+}
+.logo a img{
+	width: 90%;
+}
+.men{
+	display: flex;
+	list-style: none;
+	justify-content: space-evenly;
+}
+footer   {
+	
+	display: flex;
+	justify-content:space-around;
+}
+
+.men  {
+	width: 50%;
+
+	transition: .2s;
+	text-align: center;
+}
+.men a{
+	font-family: var(--second-family);
+font-weight: 400;
+font-size: 28px;
+color: #fff;
+}
+.row span{
+	font-size: 20px;
+}
+.search input{
+	border-radius: 10px;
+	border: 0;
+	padding: 10px;
+	height: 40px;
+}
+footer {
+	margin-top: 40px;
+
+	display: flex;
+	padding: 30px;
+	justify-content: space-evenly;
+	align-items: center;
+}
+footer p{
+	padding-top: 20px;
+}
+hr{
+width: 95%;
+}
+.page-title {
+	text-align: center;
+  }
+  .slider-container {
+	position: relative;
+	width: 600px;
+	height: 400px;
+	margin: 0 auto;
+	overflow: hidden;
+  }
+  .slider {
+	display: flex;
+	transition: transform 0.5s ease-in-out;
+  }
+  .slider img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
+  .prev-button,
+  .next-button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+	border: none;
+	font-size: 24px;
+	color: white;
+  }
+  .prev-button {
+	left: 10px;
+  }
+  
+  .next-button {
+	right: 10px;
+  }
+h1{
+  color: #fff;
+
+  font-size: 42px;
+  margin: 0;
+  line-height: 47px;
+  letter-spacing: 1.5px;
+}
+/* баннер */
+* {box-sizing:border-box}
+.slideshow-container {
+  max-width: 1440px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.myimg {
+    filter: brightness(75%);
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.text2 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 450;
+    font-size: 45px;
+    padding: 190px 320px;
+    margin-left: 0px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+	letter-spacing: 10px;
+
+
+	
+  }
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.headline{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 40px 0;
+}
+.headline h1{
+	font-family: var(--font-family);
+	font-weight: 600;
+	font-size: 48px;
+	text-align: center;
+	color: #000;
+	text-transform: inherit;
+}
+
+@media only screen and (max-width: 1200px) {
+		.headline img{
+			width: 15%;
+		}
+		.headline h1{
+			font-size: 30px;
+			}
+		
+			
+			div.col img {
+				margin: 15px;
+			}
+			a{
+				font-size: medium;
+			}
+}
+@media only screen and (max-width: 992px) {
+	body{
+		padding: 0 20px;
+	  }
+		.headline h1{
+			font-size: 20px;
+			text-align: center;
+			}	div.col {
+				width: 40%;
+				padding: 15px;
+				text-align: center;
+			}  div.col img {
+					margin: 10px;
+				}
+				.headline hr, footer hr{
+					margin-top: 10px;
+				}
+}
+@media only screen and (max-width: 768px) {
+	.men  li{
+		padding-left: 4%;
+		}
+		.logo{
+			width: 25%;
+		}
+		.logo a img{
+			width: 20%;
+		}
+		.men{
+width: 75%;
+		}
+		.contact__item-text p{
+			font-size: 16px;
+		}.contact__item-img{
+			width: 30%;
+		}
+		.contact2 img{
+			width: 20%;
+			height: inherit;
+		}
+		.contact__item-img img{
+			width: 60%;
+			height: inherit;
+		}
+}
+	@media only screen and (max-width: 480px) {
+			.headline img{
+				width: 20%;
+			}
+			.headline h1{
+				text-align: center;
+				}
+				body{
+					padding: 0 10px;
+				  }
+				  .headline{
+					margin: 20px 0;
+				  }
+				  div.col {
+					width: 80%;
+					padding: 15px;
+					text-align: center;
+				}
+				div.row {
+					justify-content: center;
+					margin-bottom: 30px;
+				}
+				footer{
+					margin-top: 10px;
+				}
+				form input{
+	width: 90%;
+	height: 40px;
+	margin-bottom: 10px;
+  }
+  form input::placeholder, form .part{
+	font-size: 13px;
+	
+  }
+	}
+	@media  only screen and (max-width: 320px) {
+footer p{
+	font-size: 16px;
+	text-align: center;
+}
+	.men  li{
+		padding-left: 2%;
+		
+	}
+	}
+	input,textarea,select {
+		outline: 0;
+	}
+	.hotel-reservation-form 	h1 {
+		margin: 0;
+		padding: 25px;
+		font-size: 20px;
+		text-align: center;
+		border-bottom: 1px solid #eceff2;
+		color: #ffffff;
+		font-weight: 600;
+		background-color: #3e86f5;
+	}
+	h1 i {
+		padding-right: 10px;
+		font-size: 24px;
+	}
+	.hotel-reservation-form {
+		background-color: #fff;
+		width: 500px;
+		margin: 0 auto;
+		box-shadow: 0px 0px 5px 0px rgba(0,0,0,.2);
+	}
+	.hotel-reservation-form .fields {
+		position: relative;
+		padding: 20px;
+	}
+	.hotel-reservation-form select {
+		appearance: none;
+		background-image: linear-gradient(45deg, transparent 50%, #27386D 50%), linear-gradient(135deg, #27386D 50%, transparent 50%), linear-gradient(to right, #ffffff, #ffffff);
+		background-position: calc(100% - 20px) 20px, calc(100% - 15px) 20px, calc(100% - 40px) 10px;
+		background-size: 5px 5px, 5px 5px, 1px 25px;
+		background-repeat: no-repeat;
+	}
+	.hotel-reservation-form select option:first-child {
+		display: none;
+	 }
+	.hotel-reservation-form input[type="date"]::-webkit-calendar-picker-indicator {
+		color: #ddd;
+		filter: invert(0.8);
+	}
+	.hotel-reservation-form input[type="text"], 
+	.hotel-reservation-form input[type="email"],
+	.hotel-reservation-form input[type="date"],
+	.hotel-reservation-form input[type="tel"],
+	.hotel-reservation-form select {
+		display: flex;
+		margin-top: 10px;
+		padding: 15px;
+		border: 1px solid #dfe0e0;
+		width: 100%;
+		flex-basis: 100%;
+		height: 47px;
+	}
+	.hotel-reservation-form input[type="text"]:focus, 
+	.hotel-reservation-form input[type="email"]:focus,
+	.hotel-reservation-form input[type="tel"]:focus,
+	.hotel-reservation-form input[type="date"]:focus,
+	.hotel-reservation-form select:focus {
+		border: 1px solid #c6c7c7;
+	}
+	.hotel-reservation-form input[type="text"]::placeholder, 
+	.hotel-reservation-form input[type="email"]::placeholder, 
+	.hotel-reservation-form input[type="tel"]::placeholder, 
+	.hotel-reservation-form input[type="date"]:invalid, 
+	.hotel-reservation-form textarea::placeholder,
+	.hotel-reservation-form select:invalid {
+		color: #000000;
+	}
+	.hotel-reservation-form textarea {
+		resize: none;
+		margin-top: 15px;
+		padding: 15px;
+		border: 1px solid #dfe0e0;
+		width: 100%;
+		height: 150px;
+	}
+	.hotel-reservation-form textarea:focus {
+		border: 1px solid #ffffff;
+	}
+	.hotel-reservation-form input[type="submit"] {
+		display: block;
+		margin-top: 15px;
+		padding: 15px;
+		border: 0;
+		background-color: #3e86f5;
+		font-weight: bold;
+		color: #fff;
+		cursor: pointer;
+		width: 60%;
+		margin-left: 90px;
+	}
+	.hotel-reservation-form input[type="submit"]:hover {
+		background-color: #3e86f5;
+	}
+	.hotel-reservation-form input[name="email"] {
+		position: relative;
+		display: block;
+	}
+	.hotel-reservation-form .field {
+		display: inline-flex;
+		position: relative;
+		width: 100%;
+		padding-bottom: 20px;
+	}
+	.hotel-reservation-form label {
+		font-size: 14px;
+		font-weight: 600;
+		color: #3e86f5;
+	}
+	.hotel-reservation-form .field i {
+		position: absolute;
+		color: #ffffff;
+		top: 25px;
+		left: 15px;
+		z-index: 10;
+	}
+	.hotel-reservation-form .field i ~ input {
+		padding-left: 45px !important;
+	}
+	.hotel-reservation-form .responses {
+		padding: 15px;
+		margin: 0;
+	}
+	.hotel-reservation-form .fields .wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	.hotel-reservation-form .fields .wrapper > div {
+		width: 100%;
+	}
+	.hotel-reservation-form .fields .wrapper .gap {
+		width: 35px;
+	}
+
+.coli{
+	border:1px solid #000000;
+	margin-top: 40px;
+		width: 90%;
+}
+	.rowi{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	}
+	.rowi hr{
+		width: 0.5px;
+		height: 39px;
+		margin: 5px 0;
+	}
+	.rowi#products{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+		}
+		.forms form{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 80px;
+		}
+		.forms form input{
+width: 400px;
+height: 40px;
+		}
+		#myBtn {
+			display: none; /* Hidden by default */
+			position: fixed; /* Fixed/sticky position */
+			bottom: 20px; /* Place the button at the bottom of the page */
+			right: 30px; /* Place the button 30px from the right */
+			z-index: 99; /* Make sure it does not overlap */
+			border: none; /* Remove borders */
+			outline: none; /* Remove outline */
+			background-color:#27386D; /* Set a background color */
+			color: white; /* Text color */
+			cursor: pointer; /* Add a mouse pointer on hover */
+			padding: 15px; /* Some padding */
+			border-radius: 10px; /* Rounded corners */
+			font-size: 18px; /* Increase font size */
+		}
+		
+		#myBtn:hover {
+			background-color: rgba(2, 48, 192, 0.07); 
+		}
+	
+/*Стили для хедера*/
+header{
+padding-top: 40px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+   justify-content: space-evenly;
+
+}
+.menu{
+  margin-top: 20px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.links{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.links a{
+
+line-height: normal;
+text-decoration: none;font-family: var(--second-family);
+font-weight: 300;
+font-size: 28px;
+color: #fff;
+}
+.links button{
+  text-decoration: none;font-family: var(--second-family);
+font-weight: 300;
+font-size: 28px;
+color: #fff;
+}
+
+.input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  
+    width: 500px;
+    
+    border-radius: 40px;
+  }
+
+  .acc
+  {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+justify-content: space-between;
+background-image: url(../img/pexels-francesco-ungaro-2835436\ 1.png);
+background-repeat: no-repeat;
+background-size: cover;
+height: 1200px;
+
+  }
+  .ban-img{
+    width: 50%;
+  }
+.ban-text{
+  height: 80%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;justify-content: center;
+}
+  .ban-text p{
+    color: #ffffff;
+font-family: 'Jura';
+font-size: 40px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+text-align: center;
+font-family: var(--second-family);
+font-weight: 500;
+font-size: 64px;
+text-align: center;
+color: #fff;
+
+  }
+  .ban-text h5{
+    font-family: var(--font4);
+font-weight: 500;
+font-size: 24px;
+line-height: 200%;
+text-align: center;
+color: #fff;
+  }
+  
+  .container{
+    width: 72%;
+  }
+
+html{
+  height: 100%;
+}
+.information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information__photo{
+  width: 47%;
+}
+.information__photo img{
+  width: 100%;
+}
+.information__text{
+  width: 47%;
+}
+.information__text h1{
+  font-family: var(--second-family);
+font-weight: 600;
+font-size: 48px;
+color: #000;
+}
+.information__text p{
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 200%;
+color: rgba(0, 0, 0, 0.5);
+}
+.information__text button{
+  width: 45%;
+height: 7vh;
+  box-shadow: 4px 8px 25px 0 rgba(62, 134, 245, 0.25);
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 21px;
+color: #fff;
+background: #3e86f5;
+border-radius: 10px;
+border: 0;
+}
+
+
+.rec{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.rec__1{
+  width: 85%;
+padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+  box-shadow: 4px 4px 25px 0 rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 25px;
+}
+
+.rec__1 img{
+  width: 100%;
+  
+}
+.rec__1 h1{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+color: #000;
+padding-left: 5%;
+padding-top: 15px;
+}
+.location{
+  padding-top: 15px;
+  padding-left: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  
+}
+.location img{
+  width: 10%;
+}
+.location p{
+  font-family: var(--second-family);
+font-weight: 500;
+font-size: 19px;
+color: rgba(0, 0, 0, 0.5);
+}
+
+.sale{
+  box-shadow: 4px 8px 25px 0 rgba(62, 134, 245, 0.25);
+  width: 90%;
+  height: 350px;
+  background-image: url(../img/52.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: #f7f7f7;
+  border-radius: 80px;
+}
+.sale h1{
+  font-family: var(--font-family);
+font-weight: 600;
+font-size: 35px;
+text-align: center;
+color: #fff;
+width: 60%;
+line-height: 50px;
+margin-bottom: 40px;
+margin-top: 30px;
+}
+
+.sale a{
+  border-radius: 25px;
+width: 275px;
+height: 80px;
+background: #fff;
+font-family: var(--second-family);
+font-weight: 400;
+font-size: 24px;
+color: #3e86f5;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+  /*Стили для футера*/
+ footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+ }
+
+
+ .container_1{
+  margin: 0 auto;
+  width: 100%;
+height: 500px;
+background: #fefcfb;
+
+
+}
+.carousel {
+  margin: 0 auto;
+  position: relative;
+}
+  .carousel .carousel-indicators {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 15;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      list-style: none;
+  }
+      .carousel .carousel-indicators li {
+          flex: 0 1 auto;
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          margin-left: 5px;
+          cursor: pointer;
+          background-color: #343a40;
+          border: 2px solid #fff;
+          border-radius: 50%;
+      }
+      .carousel .carousel-indicators .active {
+          background-color: #3e86f5;
+      }
+  .carousel .carousel-window {
+      width: 100%;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+	  background-color: #f7f7f7;
+  }
+  .carousel .carousel-slides {
+      height: 100%;
+      display: flex;
+      transition: transform 1.5s;
+  }
+ 
+     
+  .carousel .carousel-prev, .carousel .carousel-next {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      color: #fff;
+      opacity: 0.7;
+      text-align: center;
+      font-size: 40px;
+      text-decoration: none;
+  }
+  .carousel .carousel-prev:hover, .carousel .carousel-next:hover {
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.2);
+  }
+  .carousel .carousel-prev {
+      left: 0;
+  }
+  .carousel .carousel-next {
+      right: 0;
+  }
+.carousel-item{
+  width: 10%;
+}
+.zag1 h1{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: var(--second-family);
+font-weight: 600;
+font-size: 48px;
+color: #000;
+}
+footer p{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 209%;
+color: rgba(0, 0, 0, 0.5);
+}
+.fmenu{
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fmenu a{
+  font-family: var(--font-family);
+font-weight: 500;
+font-size: 24px;
+color: rgba(0, 0, 0, 0.75);
+}
+body{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f7f7f7;
+}
+.img{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 10px;
+  }
+  .row-cart{
+	border-radius: 50px;
+padding-right: 40px;
+box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05);
+background: #fff;
+display: flex;
+flex-direction: column;
+align-items: start;
+padding: 15px;
+  }
+  .inf{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+  }
+.type{
+	border-radius: 100px;
+	background: #fcddec;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20px;
+	margin-right: 10px;
+}
+.type h5{
+	font-family: var(--third-family);
+font-weight: 600;
+font-size: 14px;
+color: #f178b6;
+}
+.day-night p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 14px;
+color: rgba(0, 0, 0, 0.5);
+}
+.names h3{
+	font-family: var(--font-family);
+font-weight: 600;
+font-size: 24px;
+color: #000;
+}
+.buybuy{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.buybuy p{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 24px;
+color: #000;
+}
+.buybuy button{
+	border: 0;
+	border-radius: 10px;
+	background: #f2f6ff;
+}
+.buybuy button a{
+	font-family: var(--font-family);
+font-weight: 500;
+font-size: 17px;
+color: #3e86f5;
+}
+.carousel .carousel-slides {
+    height: 100%;
+    display: flex;
+    transition: transform 1.5s;
+    justify-content: space-evenly;
+}
